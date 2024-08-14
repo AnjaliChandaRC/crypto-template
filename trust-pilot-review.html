@@ -1,254 +1,733 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>5-star-review</title>
 
     <style>
-        * {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
+      * {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .color_grey {
+        color: #3d3d3d !important;
+      }
+      @media only screen and (max-width: 576px) {
+        .d_inline_grid {
+          display: inline-grid !important;
         }
-        .color_grey{
-        color: #3D3D3D !important;
-         }
-        @media only screen and (max-width: 576px) {
-       .d_inline_grid{
-                display: inline-grid !important;
-         }
-       .w_100{
-        width: 100% !important;
-       }
-       .text_center{
-        text-align: center !important;
-       }
-       .p_40_16{
-        padding: 40px 16px !important;
-       }
-       .p_30_24{
-        padding: 30px 24px !important;
-       }
-       .pb_30{
-        padding-bottom: 30px !important;
-       }
-       .p_0{
-        padding: 0 0 20px 0 !important;
-       }
-       .p_24_15{
-        padding: 0 24px 15px 24px !important;
-       }
-       .p_15_20{
-        padding: 15px 0 20px 0 !important;
-       }
+        .w_100 {
+          width: 100% !important;
         }
+        .text_center {
+          text-align: center !important;
+        }
+        .p_40_16 {
+          padding: 40px 16px !important;
+        }
+        .p_30_24 {
+          padding: 30px 24px !important;
+        }
+        .pb_30 {
+          padding-bottom: 30px !important;
+        }
+        .p_0 {
+          padding: 0 0 20px 0 !important;
+        }
+        .p_24_15 {
+          padding: 0 24px 15px 24px !important;
+        }
+        .p_15_20 {
+          padding: 15px 0 20px 0 !important;
+        }
+        .fs_20 {
+          font-size: 20px !important;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; background-color: #E6E6E6;">
-        <tbody>
-            <tr>
-                <td cellpadding="0" cellspacing="0" border="0" style="width: 100%; padding: 80px 0;" class="p_40_16">
-                    <center style="width: 100%;table-layout:fixed;">
-                        <table cellpadding="0" cellspacing="0" border="0"
-                            style="width: 100%; max-width: 674px; margin: 0 auto; background-color: white;">
-                            <tbody>
-                           <!-- ========logo======= -->
-                            <tr>
-                                    <td style="width: 100%; padding: 40px 0 49px;text-align: center;background-color: #F6F8FF;" class="p_30_24 pb_12">
-                                        <a href="https://www.cryptodispensers.com/" target="_blank"><img
-                                                src="https://i.postimg.cc/90kvKJfq/Crypto-Logo.png" alt="Crypto-Logo" width="186"></a>
-                                    </td>
-                                </tr>
-                                  <!-- =============feedback================= -->
-                                <tr>
-                                    <td style="background-color: #F6F8FF; width: 100%;padding-bottom: 60px;" class="p_30_24">
-                                        <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
-                                            <tr>
-                                                <td style="width: 100%; text-align: center; padding-bottom:49px;" class="pb_30">
-                                                    <img src="https://i.postimg.cc/sDPWBv2c/5-star-image.png" alt="review" width="253px">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; text-align: center;" class="pb_12">
-                                                    <h1 style="color: black;font-size: 32px;font-weight: 600;line-height: 38.4px;text-align: center; max-width: 548px; margin: 0 auto;" class="fs_27">
-                                                      We Value Your Feedback
-                                                    </h1>
-                                                </td>
-                                            </tr>
+  <body>
+    <table
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      style="width: 100%; background-color: #e6e6e6"
+    >
+      <tbody>
+        <tr>
+          <td
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="width: 100%; padding: 80px 0"
+            class="p_40_16"
+          >
+            <center style="width: 100%; table-layout: fixed">
+              <table
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                style="
+                  width: 100%;
+                  max-width: 674px;
+                  margin: 0 auto;
+                  background-color: white;
+                "
+              >
+                <tbody>
+                  <!-- ========logo======= -->
+                  <tr>
+                    <td
+                      style="
+                        width: 100%;
+                        padding: 40px 0 49px;
+                        text-align: center;
+                        background-color: #f6f8ff;
+                      "
+                      class="p_30_24 pb_12"
+                    >
+                      <a
+                        href="https://www.cryptodispensers.com/"
+                        target="_blank"
+                        ><img
+                          src="https://i.postimg.cc/90kvKJfq/Crypto-Logo.png"
+                          alt="Crypto-Logo"
+                          width="186"
+                      /></a>
+                    </td>
+                  </tr>
+                  <!-- =============feedback================= -->
+                  <tr>
+                    <td
+                      style="
+                        background-color: #f6f8ff;
+                        width: 100%;
+                        padding-bottom: 60px;
+                      "
+                      class="p_30_24"
+                    >
+                      <table
+                        style="width: 100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                      >
+                        <tr>
+                          <td
+                            style="
+                              width: 100%;
+                              text-align: center;
+                              padding-bottom: 49px;
+                            "
+                            class="pb_30"
+                          >
+                            <img
+                              src="https://i.postimg.cc/sDPWBv2c/5-star-image.png"
+                              alt="review"
+                              width="253px"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="width: 100%; text-align: center"
+                            class="pb_12"
+                          >
+                            <h1
+                              style="
+                                color: black;
+                                font-size: 32px;
+                                font-weight: 600;
+                                line-height: 38.4px;
+                                text-align: center;
+                                max-width: 548px;
+                                margin: 0 auto;
+                              "
+                              class="fs_20"
+                            >
+                              We Value Your Feedback
+                            </h1>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ================let-us-know========== -->
+                  <tr>
+                    <td class="p_30_24" style="padding: 60px 0">
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="width: 100%"
+                      >
+                        <tr>
+                          <td>
+                            <h3
+                              style="
+                                font-weight: 600;
+                                font-size: 24px;
+                                line-height: 28.8px;
+                                color: black;
+                                text-align: center;
+                                padding-bottom: 10px;
+                              "
+                            >
+                              Let Us Know How We Did
+                            </h3>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p
+                              style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 21px;
+                                color: #4d4d4d;
+                                max-width: 495px;
+                                text-align: center;
+                                margin: 0 auto;
+                              "
+                            >
+                              We’d love to hear about your experience with
+                              Crypto Dispensers! Share your thoughts in a 5-star
+                              review and help others discover the benefits of
+                              our service .As a token of our appreciation, we're
+                              offering an exciting reward.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- ==============free-bitcoin======== -->
+                  <tr>
+                    <td class="p_24_15" style="padding: 0 40px 60px 40px">
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="width: 100%"
+                      >
+                        <tr>
+                          <td>
+                            <h3
+                              style="
+                                font-weight: 600;
+                                font-size: 24px;
+                                line-height: 28px;
+                                color: black;
+                                text-align: center;
+                                margin: 0 auto;
+                              "
+                            >
+                              Here’s how you earn $10 in free Bitcoin
+                            </h3>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 25px 0 30px">
+                            <table
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="width: 100%"
+                              class="text_center"
+                            >
+                              <tr class="d_inline_grid">
+                                <td
+                                  class="w_100 p_0"
+                                  style="width: 33.33%; padding-right: 20px"
+                                >
+                                  <table
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    class="w_100"
+                                    style="
+                                      width: 100%;
+                                      width: 185px;
+                                      background-image: url(https://i.postimg.cc/8zZm5tkD/one-bg-img.png);
+                                      background-repeat: no-repeat;
+                                      background-position: bottom;
+                                      background-size: 100% 100%;
+                                      border: 1px solid #20a4f333;
+                                      border-radius: 12px;
+                                    "
+                                  >
+                                    <tr>
+                                      <td>
+                                        <table
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          style="
+                                            padding: 27px 17px;
+                                            width: 100%;
+                                          "
+                                        >
+                                          <tr>
+                                            <td
+                                              style="
+                                                text-align: center;
+                                                padding-bottom: 15px;
+                                                line-height: 0;
+                                              "
+                                            >
+                                              <img
+                                                style="line-height: 0"
+                                                src="https://i.postimg.cc/RhgNRnn5/5-star-box-img.png"
+                                                alt="5-star-box-img"
+                                                width="58"
+                                              />
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p
+                                                style="
+                                                  font-weight: 400;
+                                                  font-size: 14px;
+                                                  line-height: 16px;
+                                                  max-width: 152px;
+                                                  color: black;
+                                                  text-align: center;
+                                                "
+                                              >
+                                                Leave a 5 Star Review on
+                                                Trustpilot
+                                              </p>
+                                            </td>
+                                          </tr>
                                         </table>
-                                    </td>
-                                </tr>
-                                <!-- ================let-us-know========== -->
-                             <tr>
-                                <td class="p_30_24" style="padding: 60px 0;">
-                                <table cellpadding="0" cellspacing="0" border="0" style="width: 100% ;">
-                                     <tr>
-                              <td><h3 style="font-weight: 600;font-size: 24px; line-height: 28.8px; color: black; text-align: center;padding-bottom: 10px;">Let Us Know How We Did</h3></td>
-                                  </tr>
-                                 <tr><td><p style="font-weight: 400; font-size: 14px;line-height: 21px; color: #4D4D4D;max-width: 495px;text-align: center;margin: 0 auto;">We’d love to hear about your experience with Crypto Dispensers! Share your thoughts in a 5-star review and help others discover the benefits of our service
-                                   .As a token of our appreciation, we're offering an exciting reward.</p></td></tr>
-                                </table>
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
-                             </tr>
-                             <!-- ==============free-bitcoin======== -->
-                              <tr>
-                                <td class="p_24_15" style="padding: 0 40px 60px 40px;">
-                                <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
-                                    <tr><td><h3 style="font-weight: 600;font-size: 24px;line-height: 28px;color: black;text-align: center;margin: 0 auto;">Here’s how you earn $10 in free Bitcoin </h3></td></tr>
-                                     <tr>
-                                        <td style="padding: 25px 0 30px;">
-                                            <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;" class="text_center">
-                                                <tr class="d_inline_grid">
-                                        <td class="w_100 p_0" style="width: 33.33%;padding-right: 20px;">
-                                            <table  cellpadding="0" cellspacing="0" border="0" class="w_100" style="width: 100%; width: 185px; background-image: url(https://i.postimg.cc/8zZm5tkD/one-bg-img.png); background-repeat: no-repeat;background-position: bottom; background-size: 100% 100%;border: 1px solid #20A4F333; border-radius: 12px;">
-                                           <tr>
+                                <td
+                                  class="w_100 p_0"
+                                  style="width: 33.33%; padding-right: 20px"
+                                >
+                                  <table
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    class="w_100"
+                                    style="
+                                      width: 100%;
+                                      width: 185px;
+                                      background-image: url(https://i.postimg.cc/288YvSFY/2-bg-img.png);
+                                      background-repeat: no-repeat;
+                                      background-position: bottom;
+                                      background-size: 100% 100%;
+                                      border: 1px solid #20a4f333;
+                                      border-radius: 12px;
+                                    "
+                                  >
+                                    <tr>
+                                      <td>
+                                        <table
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          style="
+                                            padding: 29px 17px;
+                                            width: 100%;
+                                          "
+                                        >
+                                          <tr>
+                                            <td
+                                              style="
+                                                text-align: center;
+                                                padding-bottom: 15px;
+                                                line-height: 0;
+                                              "
+                                            >
+                                              <img
+                                                style="line-height: 0"
+                                                src="https://i.postimg.cc/DfBnphmg/address.png"
+                                                alt="address-img"
+                                                width="58"
+                                              />
+                                            </td>
+                                          </tr>
+                                          <tr>
                                             <td>
-                                <table cellpadding="0" cellspacing="0" border="0" style="padding: 27px 17px; width: 100%;">
-                                    <tr><td style="text-align: center;padding-bottom: 15px;line-height: 0;"><img style="line-height: 0;" src="https://i.postimg.cc/RhgNRnn5/5-star-box-img.png" alt="5-star-box-img" width="58"></td></tr>
-                                    <tr><td><p style="font-weight: 400; font-size: 14px;line-height: 16px;max-width: 152px;color: black;text-align: center;">Leave a 5 Star Review on Trustpilot</p></td></tr>
-                                </table>
-                                    </td>
-                                        </tr>
-                                            </table>
-                                        </td>
-                                             <td class="w_100 p_0" style="width: 33.33%;padding-right: 20px;">
-                                            <table  cellpadding="0" cellspacing="0" border="0" class="w_100" style="width: 100%; width: 185px; background-image: url(https://i.postimg.cc/288YvSFY/2-bg-img.png); background-repeat: no-repeat;background-position: bottom; background-size: 100% 100%;border: 1px solid #20A4F333;border-radius: 12px;">
-                                           <tr>
-                                            <td>
-                                <table cellpadding="0" cellspacing="0" border="0" style="padding: 29px 17px; width: 100%;">
-                                    <tr><td style="text-align: center;padding-bottom: 15px;line-height: 0;"><img style="line-height: 0;" src="https://i.postimg.cc/DfBnphmg/address.png" alt="address-img" width="58"></td></tr>
-                                    <tr><td><p style="font-weight: 400; font-size: 14px;line-height: 16px;max-width: 152px;color: black;text-align: center;">Share your Bitcoin Address</p></td></tr>
-                                </table>
-                                    </td>
-                                        </tr>
-                                            </table>
-                                        </td>
-                                         <td class="w_100" style="width: 33.33%">
-                                            <table  cellpadding="0" cellspacing="0" border="0" class="w_100" style="width: 100%; width: 185px; background-image: url(https://i.postimg.cc/CxG4gSXZ/3-bg-img.png); background-repeat: no-repeat;background-position: bottom; background-size: 100% 100%;border: 1px solid #20A4F333;border-radius: 12px;">
-                                           <tr>
-                                            <td>
-                                <table cellpadding="0" cellspacing="0" border="0" style="padding: 20px 17px; width: 100%;">
-                                    <tr><td style="text-align: center;padding-bottom: 15px;line-height: 0;"><img style="line-height: 0;" src="https://i.postimg.cc/KYWxcDSH/screenshot.png" alt="screenshot" width="58"></td></tr>
-                                    <tr><td style="width: 100%;"><p style="font-weight: 400; font-size: 14px;line-height: 16px;max-width: 152px;color: black;text-align: center; max-width: 104px; margin: 0 auto;">Send a Screenshot of Your Review</p></td></tr>
-                                </table>
-                                    </td>
-                                        </tr>
-                                            </table>
-                                        </td>
-                                           </tr>
-                                            </table>
-                                        </td>
-                                     </tr>
-                                     <tr><td style="text-align: center;line-height: 0;"><a href="" target="_blank"><img style="line-height: 0;" src="https://i.postimg.cc/SxBjD4js/review-button.png" alt="review-button" width="181"></a></td></tr>
-                                </table>
-                              </td>
-                            </tr>
-                            <!--==========feedback-bitcoin===========  -->
-                            <tr>
-                             <td style="width: 100%;padding: 0 27px 40px;" class="p_30_24">
-                                        <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
-                                            <tr>
-                                                <td style="width: 100%;">
-                                                    <table
-                                                        style="width: 100%;background-image: url(https://i.postimg.cc/s2rLRn2c/feedback-bg-img.png); background-position: center;background-repeat: no-repeat;background-size: 100% 100%;border-radius: 16px;padding: 37px 56px 28px 56px;"
-                                                        class="p_30_24">
-                                                        <tr>
-                                                            <td style="width: 100%;text-align: center;">
-                                                                <h3
-                                                                    style="color: white;font-size: 24px;font-weight: 600;line-height: 28.8px;margin: 0 auto;text-align: center;">
-                                                                   Turn Your Feedback into Bitcoin</h3>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="width: 100%;padding:28px 0 32px 0; text-align: center;" class="p_15_20">
-                                                                <p
-                                                                    style="color:#C2D3F6;font-size: 14px;font-weight: 400;line-height: 21px;text-align: center; width: 479px; margin: 0 auto;">
-                                                                    Your feedback means the world to us and helps us improve. We can’t wait to reward your support with $10 in Bitcoin.</p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="width: 100%;text-align: center;line-height: 0;">
-                                                                <a href=""
-                                                                    target="_blank" style="text-align: center; line-height: 0;"><img
-                                                                        src="https://i.postimg.cc/PxtrNzSb/claim-button.png"
-                                                                        alt="sign-up-btn" width="192"></a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
+                                              <p
+                                                style="
+                                                  font-weight: 400;
+                                                  font-size: 14px;
+                                                  line-height: 16px;
+                                                  max-width: 152px;
+                                                  color: black;
+                                                  text-align: center;
+                                                "
+                                              >
+                                                Share your Bitcoin Address
+                                              </p>
+                                            </td>
+                                          </tr>
                                         </table>
-                                    </td>
-                         </tr>
-                      <!-- footer -->
-                                <tr>
-                                    <td style="width: 100%; padding: 34px 27px 12px 27px;" class="p_30_24">
-                                        <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
-                                            <tr>
-                                                <td style="width: 100%; text-align: center;padding-bottom: 16px; line-height: 0;" class="pb_12">
-                                                    <a href="https://www.cryptodispensers.com/" target="_blank" style="text-align: center;"><img style="line-height: 0;"
-                                                            src="https://i.postimg.cc/fbKQFQ1W/crypto-footerlogo.png" alt="footerlogo" width="203px"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%;text-align: center;padding-bottom: 20px;" class="pb_16">
-                                                    <p
-                                                        style="color: #494949;font-size: 14px;font-weight: 400;line-height: 21px;text-align: center;max-width: 372px;margin: 0 auto;">
-                                                       Your feedback is invaluable to us. Thank you for helping us improve and for being a part of our community!.</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; text-align: center;padding-bottom: 20px;" class="pb_16">
-                                                    <table style="width:144px;margin: 0 auto;" cellpadding="0" cellspacing="0" border="0">
-                                                        <tr>
-                                                            <td style="padding-right: 16px;">
-                                                                <a href="https://www.facebook.com/cryptodispenser" target="_blank"> <img
-                                                                        src="https://i.postimg.cc/9FfV5Ng8/facebook.png" alt="facebook" width="24"></a>
-                                                            </td>
-                                                            <td style="padding-right: 16px;">
-                                                                <a href="https://x.com/cryptodispenser" target="_blank"><img
-                                                                        src="https://i.postimg.cc/136jLGS7/twitter.png" alt="twitter" width="24"></a>
-                                                            </td>
-                                                            <td style="padding-right: 16px;">
-                                                                <a href="https://www.linkedin.com/company/cryptodispensers/" target="_blank"><img
-                                                                        src="https://i.postimg.cc/NMGC9ZHZ/linkedin.png" alt="linkedin" width="24"></a>
-                                                            </td>
-                                                            <td>
-                                                                <a href="https://www.instagram.com/crypto.dispensers/" target="_blank"><img
-                                                                        src="https://i.postimg.cc/Twk7rQj1/instagram.png" alt="instagram"
-                                                                        width="24"></a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%;text-align: center;padding-bottom: 34px;">
-                                                    <a href="#"
-                                                        style="color: #1F67D6;font-size: 16px;font-weight: 600;line-height: 19.2px;text-align: center; text-decoration: underline;">Unsubscribe</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; text-align: center;">
-                                                    <a href="" class="color_grey" style="font-size: 12px;font-weight: 400;line-height: 22.8px;letter-spacing: 0.005em;text-align: center;text-decoration: none;">© Crypto Dispensers | 205 N Michigan Ave Suite 210 Chicago, IL 60601 | (888) 212-2140</a>
-                                                </td>
-                                            </tr>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td class="w_100" style="width: 33.33%">
+                                  <table
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    class="w_100"
+                                    style="
+                                      width: 100%;
+                                      width: 185px;
+                                      background-image: url(https://i.postimg.cc/CxG4gSXZ/3-bg-img.png);
+                                      background-repeat: no-repeat;
+                                      background-position: bottom;
+                                      background-size: 100% 100%;
+                                      border: 1px solid #20a4f333;
+                                      border-radius: 12px;
+                                    "
+                                  >
+                                    <tr>
+                                      <td>
+                                        <table
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          style="
+                                            padding: 20px 17px;
+                                            width: 100%;
+                                          "
+                                        >
+                                          <tr>
+                                            <td
+                                              style="
+                                                text-align: center;
+                                                padding-bottom: 15px;
+                                                line-height: 0;
+                                              "
+                                            >
+                                              <img
+                                                style="line-height: 0"
+                                                src="https://i.postimg.cc/KYWxcDSH/screenshot.png"
+                                                alt="screenshot"
+                                                width="58"
+                                              />
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width: 100%">
+                                              <p
+                                                style="
+                                                  font-weight: 400;
+                                                  font-size: 14px;
+                                                  line-height: 16px;
+                                                  max-width: 152px;
+                                                  color: black;
+                                                  text-align: center;
+                                                  max-width: 104px;
+                                                  margin: 0 auto;
+                                                "
+                                              >
+                                                Send a Screenshot of Your Review
+                                              </p>
+                                            </td>
+                                          </tr>
                                         </table>
-                                    </td>
-                                </tr>
-                                </tbody>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
                             </table>
-                            </center>
-                </td>
-            </tr>
-        </tbody>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center; line-height: 0">
+                            <a href="" target="_blank"
+                              ><img
+                                style="line-height: 0"
+                                src="https://i.postimg.cc/SxBjD4js/review-button.png"
+                                alt="review-button"
+                                width="181"
+                            /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!--==========feedback-bitcoin===========  -->
+                  <tr>
+                    <td
+                      style="width: 100%; padding: 0 27px 40px"
+                      class="p_30_24"
+                    >
+                      <table
+                        style="width: 100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                      >
+                        <tr>
+                          <td style="width: 100%">
+                            <table
+                              style="
+                                width: 100%;
+                                background-image: url(https://i.postimg.cc/s2rLRn2c/feedback-bg-img.png);
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: 100% 100%;
+                                border-radius: 16px;
+                                padding: 37px 56px 28px 56px;
+                              "
+                              class="p_30_24"
+                            >
+                              <tr>
+                                <td style="width: 100%; text-align: center">
+                                  <h3
+                                    style="
+                                      color: white;
+                                      font-size: 24px;
+                                      font-weight: 600;
+                                      line-height: 28.8px;
+                                      margin: 0 auto;
+                                      text-align: center;
+                                    "
+                                  >
+                                    Turn Your Feedback into Bitcoin
+                                  </h3>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="
+                                    width: 100%;
+                                    padding: 28px 0 32px 0;
+                                    text-align: center;
+                                  "
+                                  class="p_15_20"
+                                >
+                                  <p
+                                    style="
+                                      color: #c2d3f6;
+                                      font-size: 14px;
+                                      font-weight: 400;
+                                      line-height: 21px;
+                                      text-align: center;
+                                      width: 479px;
+                                      margin: 0 auto;
+                                    "
+                                  >
+                                    Your feedback means the world to us and
+                                    helps us improve. We can’t wait to reward
+                                    your support with $10 in Bitcoin.
+                                  </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="
+                                    width: 100%;
+                                    text-align: center;
+                                    line-height: 0;
+                                  "
+                                >
+                                  <a
+                                    href=""
+                                    target="_blank"
+                                    style="text-align: center; line-height: 0"
+                                    ><img
+                                      src="https://i.postimg.cc/PxtrNzSb/claim-button.png"
+                                      alt="sign-up-btn"
+                                      width="192"
+                                  /></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- footer -->
+                  <tr>
+                    <td
+                      style="width: 100%; padding: 34px 27px 12px 27px"
+                      class="p_30_24"
+                    >
+                      <table
+                        style="width: 100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                      >
+                        <tr>
+                          <td
+                            style="
+                              width: 100%;
+                              text-align: center;
+                              padding-bottom: 16px;
+                              line-height: 0;
+                            "
+                            class="pb_12"
+                          >
+                            <a
+                              href="https://www.cryptodispensers.com/"
+                              target="_blank"
+                              style="text-align: center"
+                              ><img
+                                style="line-height: 0"
+                                src="https://i.postimg.cc/fbKQFQ1W/crypto-footerlogo.png"
+                                alt="footerlogo"
+                                width="203px"
+                            /></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="
+                              width: 100%;
+                              text-align: center;
+                              padding-bottom: 20px;
+                            "
+                            class="pb_16"
+                          >
+                            <p
+                              style="
+                                color: #494949;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 21px;
+                                text-align: center;
+                                max-width: 372px;
+                                margin: 0 auto;
+                              "
+                            >
+                              Your feedback is invaluable to us. Thank you for
+                              helping us improve and for being a part of our
+                              community!.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="
+                              width: 100%;
+                              text-align: center;
+                              padding-bottom: 20px;
+                            "
+                            class="pb_16"
+                          >
+                            <table
+                              style="width: 144px; margin: 0 auto"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                            >
+                              <tr>
+                                <td style="padding-right: 16px">
+                                  <a
+                                    href="https://www.facebook.com/cryptodispenser"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      src="https://i.postimg.cc/9FfV5Ng8/facebook.png"
+                                      alt="facebook"
+                                      width="24"
+                                  /></a>
+                                </td>
+                                <td style="padding-right: 16px">
+                                  <a
+                                    href="https://x.com/cryptodispenser"
+                                    target="_blank"
+                                    ><img
+                                      src="https://i.postimg.cc/136jLGS7/twitter.png"
+                                      alt="twitter"
+                                      width="24"
+                                  /></a>
+                                </td>
+                                <td style="padding-right: 16px">
+                                  <a
+                                    href="https://www.linkedin.com/company/cryptodispensers/"
+                                    target="_blank"
+                                    ><img
+                                      src="https://i.postimg.cc/NMGC9ZHZ/linkedin.png"
+                                      alt="linkedin"
+                                      width="24"
+                                  /></a>
+                                </td>
+                                <td>
+                                  <a
+                                    href="https://www.instagram.com/crypto.dispensers/"
+                                    target="_blank"
+                                    ><img
+                                      src="https://i.postimg.cc/Twk7rQj1/instagram.png"
+                                      alt="instagram"
+                                      width="24"
+                                  /></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="
+                              width: 100%;
+                              text-align: center;
+                              padding-bottom: 34px;
+                            "
+                          >
+                            <a
+                              href="#"
+                              style="
+                                color: #1f67d6;
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 19.2px;
+                                text-align: center;
+                                text-decoration: underline;
+                              "
+                              >Unsubscribe</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 100%; text-align: center">
+                            <a
+                              href=""
+                              class="color_grey"
+                              style="
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 22.8px;
+                                letter-spacing: 0.005em;
+                                text-align: center;
+                                text-decoration: none;
+                              "
+                              >© Crypto Dispensers | 205 N Michigan Ave Suite
+                              210 Chicago, IL 60601 | (888) 212-2140</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </center>
+          </td>
+        </tr>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>
