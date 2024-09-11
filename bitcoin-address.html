@@ -1,374 +1,417 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitcoin Address</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-            text-decoration: none;
-        }
+    <title>Bitcoin Address</title>
+    <!--[if (mso)|(mso 16)]>
+          <style type="text/css">
+            a {text-decoration:none; !important}
+          </style>
+        <![endif]-->
 
-        body {
-            max-width: 675px;
-            margin: auto;
-        }
-
-        body {
-            font-family: "Roboto", sans-serif;
-        }
-
-        .common-class-paragraph {
-            font-weight: 400;
-            font-size: 14px;
-            opacity: 70%;
-            line-height: 150%;
-            color: #000000;
-        }
-
-        .common-card-heading {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 120%;
-            color: #000000;
-            text-align: center;
-        }
-
-        .fw-600 {
-            font-weight: 600;
-        }
-
-        .fs-16 {
-            font-size: 16px;
-        }
-
-        .fs-12 {
-            font-style: 12px;
-        }
-
-        .py-40 {
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .img-size {
-            max-width: 267px;
-        }
-
-        .fs-32 {
-            font-size: 32px;
-        }
-
-        .line-height-120 {
-            line-height: 120%;
-        }
-
-        .line-height-140 {
-            line-height: 140%;
-        }
-
-        .fs-24 {
-            font-size: 24px;
-        }
-
-        .text-black {
-            color: #000000 !important;
-        }
-
-        .container {
-            padding-left: 12px;
-            padding-right: 12px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .max-width-595 {
-            max-width: 595px;
-        }
-
-        .mx-auto {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        @media (max-width:768px) {
-            .py-30 {
-                padding-top: 30px !important;
-                padding-bottom: 30px !important;
+    <head>
+        <style>
+            * {
+                font-family: 'Roboto', sans-serif;
+                margin: 0;
+                padding: 0;
             }
 
-            .fs-25 {
-                font-size: 25px !important;
+            .color_grey {
+                color: #3D3D3D !important;
             }
 
-        }
-
-        @media (max-width: 576px) {
-            .heading {
-                font-size: 22px;
-                padding-bottom: 12px;
+            .d_grid {
+                display: inline-grid !important;
             }
 
-            .fs-21 {
-                font-size: 21px !important;
+            @media only screen and (max-width: 575.99px) {
+                .d_inline_grid {
+                    display: inline-grid !important;
+                }
+
+                .w_100 {
+                    width: 100% !important;
+                }
+
+                .text_center {
+                    text-align: center !important;
+                }
+
+                .p_40_16 {
+                    padding: 40px 16px !important;
+                }
+
+                .p_30_24 {
+                    padding: 30px 24px !important;
+                }
+
+                .pb_16 {
+                    padding-bottom: 16px !important;
+                }
+
+                .p_15_20 {
+                    padding: 15px 0 20px 0 !important;
+                }
+
+                .fs_20 {
+                    font-size: 20px !important;
+                }
+
+                .text_left {
+                    text-align: left !important;
+                }
+
+                .fs_18 {
+                    font-size: 18px !important;
+                }
+
+                .p_10 {
+                    padding: 10px !important;
+                }
+
+                .pb_20 {
+                    padding-bottom: 20px !important;
+                }
+
+                .pb_10 {
+                    padding-bottom: 10px !important;
+                }
+
+                .p_15 {
+                    padding: 15px !important;
+                }
+
+                .pr_0 {
+                    padding-right: 0 !important;
+                }
+
+                .pb_0 {
+                    padding-bottom: 0 !important;
+                }
+
+                .bg_cover {
+                    background-size: cover !important;
+                }
+
+                .pt_10 {
+                    padding-top: 10px !important;
+                }
+
+                .p_10_24 {
+                    padding: 10px 24px !important;
+                }
+
+                .pb_5 {
+                    padding-bottom: 5px !important;
+                }
+
+                .logo_padding {
+                    padding: 30px 24px 0 !important;
+                }
+
+                .w_200 {
+                    width: 200px !important;
+                }
+
+                .mw_100 {
+                    max-width: 100% !important;
+                }
+                .pb_15 {
+                    padding-bottom: 15px !important;
+                }
+
+                .feedback_padding {
+                    padding: 20px 15px !important;
+                }
+
+                .ps_0 {
+                    padding-left: 0 !important;
+                }
+                 .fs_18 {
+        font-size: 18px !important;
+      }
+      .p_12{
+        padding: 12px 0 !important;
+      }
+      .pb_57{
+        padding-bottom: 57px;
+      }
+      .pb_78{
+        padding-bottom: 78px;
+      }
+      .footer_padding{
+          padding: 0 24px 30px 24px !important;
+      }
             }
+        </style>
+    </head>
 
-            .fs-19 {
-                font-size: 19px !important;
-            }
-
-            .py-25 {
-                padding-top: 25px !important;
-                padding-bottom: 25px !important;
-            }
-
-
-            .pt-sm-25 {
-                padding-top: 25px;
-            }
-
-            .pb-sm-34 {
-                padding-bottom: 34px;
-            }
-
-            .hero-section-padding {
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-
-            .py-10 {
-                padding-top: 10px !important;
-
-            }
-
-            .img-size {
-                width: 215px;
-                height: 150px;
-
-            }
-
-            .g-item1 {
-                grid-column: 1/2;
-                grid-row: 1/2;
-            }
-
-            .g-item2 {
-                grid-column: 1/2;
-                grid-row: 2/3;
-            }
-
-            .g-item3 {
-                grid-column: 1/2;
-                grid-row: 3/4;
-            }
-
-            .g-item4 {
-                grid-column: 1/2;
-                grid-row: 4/5;
-            }
-
-            .grid-card {
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: auto;
-
-            }
-
-            .sm-pr-0 {
-                padding-right: 0px !important;
-            }
-
-            .pb-10 {
-                padding-bottom: 10px !important;
-            }
-
-            .pt-15 {
-                padding-top: 15px !important;
-            }
-
-            .sm-pb-0 {
-                padding-bottom: 0 !important;
-            }
-        }
-    </style>
-</head>
-
-<body style="max-width: 650px; margin: auto;">
-    <!-- ---------hero-section--------- -->
-    <section style="width: 100%; background-color: #F6F8FF;" class="hero-section-padding py-40 py-30 py-25 ">
-        <div style=" padding-bottom: 32px;" class="text-center">
-            <a href="https://www.cryptodispensers.com/" target="_blank">
-                <img src="https://img.mailinblue.com/8005024/images/content_library/original/66bc478ce9738ca499bb1e2e.png"
-                    alt="logo" width="186">
-            </a>
-        </div>
-        <div style="padding-bottom: 41px;" class="text-center">
-                <img src="https://i.postimg.cc/wBQRyLd0/address.png" alt="hero-image" class="img-size">
-        </div>
-        <div style="width: 100%; padding-bottom: 18px;" class="text-center">
-            <p class="hero-section-heading fs-32 fw-600 line-height-120 fs-25  fs-21">
-                Add Your Bitcoin Address</p>
-        </div>
-        <div style="width: 100%;text-align: center; max-width: 419px; margin-right: auto; margin-left: auto; ">
-            <p class="common-class-paragraph" style="padding-left: 12px; padding-right: 12px;">
-                Here’s a simple guide to help you set up your Bitcoin wallet. Setting up a Bitcoin wallet is a crucial
-                step
-                in managing
-                and using digital assets like Bitcoin.</p>
-        </div>
-    </section>
-    <!-- ---------table --------->
-    <section class="mx-auto table-section py-10 max-width-595"
-        style="padding-left: 30px; padding-right: 30px; padding-top: 60px;  ">
-        <div style="margin: auto;">
-            <h2 class="  fs-24 fw-600  line-height-120 text-center text-black py-30 py-25 fs-19 "
-                style="  padding-bottom: 40px;">
-                Adding your BTC Wallet to Crypto Dispensers</h2>
-            <div class="grid-card">
-                <table>
-                    <tr class="grid-card">
-                        <td class="g-item1 sm-pr-0  pb-10 " style="  padding-right: 20px;  padding-bottom: 20px;">
-                            <div class="text-center "
-                                style=" padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 7px; border: 1px solid #356CE126; border-radius: 12px;">
-                                <img style="max-width: 48px;" src="https://i.postimg.cc/fLrH4WsP/qw.png" alt="image">
-                                <p class="common-card-heading" style="padding-bottom: 10px; padding-top: 19px;">
-                                    Download a Wallet App</p>
-                                <p class="common-class-paragraph text-center sm-pb-0"
-                                    style=" max-width: 255px; padding-bottom: 60px; margin: auto; ">
-                                    Find a Bitcoin Wallet app on iOS or Android, or continue with your existing wallet.
-                                </p>
+<body>
+    <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; background-color: #E6E6E6;">
+        <tbody>
+            <tr>
+                <td cellpadding="0" cellspacing="0" border="0" style="width: 100%; padding: 80px 0;" class="p_40_16">
+                    <center style="width: 100%;table-layout:fixed;">
+                        <table cellpadding="0" cellspacing="0" border="0"
+                            style="width: 100%; max-width: 675px; margin: 0 auto; background-color: white;">
+                            <tbody>
+                                <!-- ========logo======= -->
+                                <tr>
+                                    <td style="width: 100%; padding: 40px 0 30px;text-align: center;background-color: #F6F8FF;"
+                                        class="logo_padding">
+                                        <a href="https://www.cryptodispensers.com/" target="_blank" class="d_grid"><img
+                                                src="https://i.postimg.cc/90kvKJfq/Crypto-Logo.png" alt="Crypto-Logo"
+                                                width="186"></a>
+                                    </td>
+                                </tr>
+                                <!-- =============hero================= -->
+                                <tr>
+                                    <td style="background-color: #F6F8FF; width: 100%;padding-bottom: 106px;"
+                                        class="p_30_24">
+                                        <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="width: 100%; text-align: center; padding-bottom:30px;"
+                                                    class="pb_20">
+                                                    <img class="w_200"
+                                                        src="https://i.postimg.cc/YSyJ2p2G/bitcoin-address.png"
+                                                        alt="bitcoin" width="299">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; text-align: center;">
+                                                    <h1 class="fs_20 pb_15"
+                                                        style="color: black;font-size: 32px;font-weight: 600;line-height:120%;text-align: center; margin: 0 auto; padding-bottom:20px;">
+                                                    Add Your Bitcoin Address
+                                                    </h1>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p
+                                                        style="font-weight: 400; font-size: 14px; line-height: 150%;color: #4A4A4D;text-align: center;max-width: 517px; margin: 0 auto;">
+                                                        Here’s a simple guide to help you set up your Bitcoin wallet. Setting up a Bitcoin wallet is a crucial step in managing
+                                                        and using digital assets like Bitcoin.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Adding your BTC Wallet to Crypto Dispensers -->
+                                <tr>
+                                    <td style="width: 100%;">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; padding: 60px 40px 0 40px;"
+                                            class="p_30_24">
+                                            <tr>
+                                                <td>
+                                                    <h4 class="fs_18"
+                                                        style="font-weight: 600; font-size: 24px; line-height: 116%; color: black; padding-bottom: 16px; text-align: center;">
+                                                    Adding your BTC Wallet to Crypto Dispensers</h4>
+                                                    <p style="font-size: 14px;
+                                                                                            font-weight: 400;
+                                                                                            line-height: 145%;
+                                                                                            text-align: center;
+                                                                                            color: #4a4a4d; max-width: 409px; margin: 0 auto;">Follow these simple steps to add your Bitcoin wallet to your Crypto Dispensers account.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; padding-top: 40px;">
+                                                    <table cellpadding="0" cellspacing="0" border="0"
+                                                        style="width: 100%; table-layout: fixed; max-width: 595px; margin: 0 auto;" class="text_center">
+                                                        <tr class="d_inline_grid w_100">
+                                                            <td style="width: 50%; padding-right: 25px; padding-bottom: 20px;" class="w_100 pb_16 pr_0">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="background-image: url(https://i.postimg.cc/t4TdQcDJ/number-1.png); max-width: 285px; width: 100%; background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 20px 15px"
+                                                                    class="p_10">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="line-height: 0; padding-right: 10px; width: 44px; text-align: center;">
+                                                                            <img src="https://i.postimg.cc/6QKMsc7m/wallet-app.png" alt="share-link"
+                                                                                width="48" style="line-height: 0;">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding:19px 0 15px 0;" class="p_12">
+                                                                            <p style="font-weight: 600; font-size: 16px; line-height: 119%; color: black; text-align: center;">
+                                                                                Download a Wallet App
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding-bottom: 78px;"> 
+                                                                            <p style="font-weight: 400; font-size: 14px; line-height: 150%; color: #4a4a4d; max-width: 255px; margin: 0 auto; text-align: center;">Find a Bitcoin Wallet app on iOS or Android, or continue with your existing wallet.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="width: 50%; padding-bottom: 20px;" class="w_100 pb_16 pr_0">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="background-image: url(https://i.postimg.cc/28N2PDVw/number-2.png); max-width: 285px; width: 100%; background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 20px 15px"
+                                                                    class="p_10">
+                                                                    <tr>
+                                                                        <td style="line-height: 0; padding-right: 10px; width: 44px; text-align: center;">
+                                                                            <img src="https://i.postimg.cc/6QKMsc7m/wallet-app.png" alt="share-link" width="48"
+                                                                                style="line-height: 0;">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding:19px 0 10px 0;" class="p_12">
+                                                                            <p style="font-weight: 600; font-size: 16px; line-height: 119%; color: black; text-align: center;">
+                                                                            Set Up Your Wallet
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="pb_57" style="padding-bottom: 62px;">
+                                                                            <p
+                                                                                style="font-weight: 400; font-size: 14px; line-height: 150%; color: #4a4a4d; max-width: 255px; margin: 0 auto; text-align: center;">
+                                                                                Follow the steps to set up a secure wallet, including creating a strong password and backing up your recovery phrase.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    <tr class="d_inline_grid w_100">
+                                                        <td style="width: 50%; padding-right: 25px;" class="w_100 pb_16 pr_0">
+                                                            <table cellpadding="0" cellspacing="0" border="0"
+                                                                style="background-image: url(https://i.postimg.cc/t4TdQcDJ/number-1.png); max-width: 285px; width: 100%; background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 20px 15px"
+                                                                class="p_10">
+                                                                <tr>
+                                                                    <td style="line-height: 0; padding-right: 10px; width: 44px; text-align: center;">
+                                                                        <img src="https://i.postimg.cc/6QKMsc7m/wallet-app.png" alt="share-link" width="48"
+                                                                            style="line-height: 0;">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="padding:19px 0 15px 0;" class="p_12">
+                                                                        <p style="font-weight: 600; max-width: 181px; text-align: center; font-size: 16px; line-height: 119%; color: black; margin: 0 auto;">
+                                                                            Copy Your Bitcoin Address
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pb_78" style="padding-bottom: 59px;">
+                                                                        <p
+                                                                            style="font-weight: 400; font-size: 14px; line-height: 150%; color: #4a4a4d; max-width: 204px; margin: 0 auto; text-align: center;">
+                                                                            Copy the alphanumeric string.
+                                                                            This address is what you will use to receive Bitcoin transactions.
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td style="width: 50%;" class="w_100 pb_16 pr_0">
+                                                            <table cellpadding="0" cellspacing="0" border="0"
+                                                                style="background-image: url(https://i.postimg.cc/28N2PDVw/number-2.png); max-width: 285px; width: 100%; background-size: 100% 100%; background-position: center; background-repeat: no-repeat; padding: 20px 15px"
+                                                                class="p_10">
+                                                                <tr>
+                                                                    <td style="line-height: 0; padding-right: 10px; width: 44px; text-align: center;">
+                                                                        <img src="https://i.postimg.cc/6QKMsc7m/wallet-app.png" alt="share-link" width="48"
+                                                                            style="line-height: 0;">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="padding:19px 0 10px 0;" class="p_12">
+                                                                        <p style="font-weight: 600; font-size: 16px; line-height: 119%; color: black; text-align: center;">
+                                                                            Add Your Bitcoin Wallet
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="padding-bottom: 83px;">
+                                                                        <p
+                                                                            style="font-weight: 400; font-size: 14px; line-height: 150%; color: #4a4a4d; max-width: 237px; margin: 0 auto; text-align: center;">
+                                                                            Log in, click "Add Wallet," paste your BTC address, and create a nickname for easy access.
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+            <!-- footer -->
+            <tr>
+                <td style="width: 100%; padding: 39px 27px;" class="footer_padding">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td style="width: 100%; text-align: center;padding-bottom: 15px; line-height: 0;"
+                                class="pb_12">
+                                <a href="https://www.cryptodispensers.com/" target="_blank" style="text-align: center;"
+                                    class="d_grid"><img style="line-height: 0;"
+                                        src="https://i.postimg.cc/GpHppRrj/footer-logo.png" alt="footer-logo"
+                                        width="37"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100%;text-align: center;padding-bottom: 15px;" class="pb_16">
                                 <p
-                                    style="font-family: Roboto;font-size: 28.82px;font-weight: 700;line-height: 120%;text-align: right; color:#356CE1; padding-bottom: 6px; opacity: 10%; padding-top: 10px;">
-                                    1</p>
-                            </div>
-                        </td>
-                        <td class="g-item2 sm-pr-0 pb-10" style=" padding-right: 20px; padding-bottom: 20px;">
-                            <div class="text-center "
-                                style=" padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 7px; border: 1px solid #356CE126; border-radius: 12px;">
-                                <img style="max-width: 48px;" src="https://i.postimg.cc/Y247vhvh/ass.png" alt="image">
-                                <p class="common-card-heading" style=" padding-bottom: 10px; padding-top: 19px;">
-                                    Set Up Your Wallet
-                                </p>
-                                <p class="common-class-paragraph sm-pb-0"
-                                    style=" max-width: 255px; padding-bottom: 39px;  margin: auto;">
-                                    Follow the steps to set up a secure wallet, including creating a strong password and
-                                    backing
-                                    up your recovery phrase.
-                                </p>
-                                <p
-                                    style="font-family: Roboto;font-size: 28.82px;font-weight: 700;line-height: 120%;text-align: right; color:#356CE1; padding-bottom: 6px; opacity: 10%;padding-top: 10px;">
-                                    2</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class=" grid-card ">
-                        <td class="g-item3 sm-pr-0 pb-10" style="padding-right: 20px; padding-bottom: 20px;">
-                            <div class="text-center"
-                                style=" padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 7px; border: 1px solid #356CE126; border-radius: 12px;">
-                                <img style="max-width: 48px;" src="https://i.postimg.cc/tCWHzwtb/qq.png" alt="image">
-                                <p class="common-card-heading" style="  padding-bottom: 10px; padding-top: 19px;">
-                                    Copy Your Bitcoin Address
-
-                                </p>
-                                <p class="common-class-paragraph sm-pb-0"
-                                    style="max-width: 255px; padding-bottom: 60px; margin: auto;">
-                                    Copy the alphanumeric string.
-                                    This address is what you will use to receive Bitcoin transactions.
-                                </p>
-                                <p
-                                    style="font-family: Roboto;font-size: 28.82px;font-weight: 700;line-height: 120%;text-align: right; color:#356CE1; padding-bottom: 6px; padding-top: 10px; opacity: 10%;">
-                                    3</p>
-                            </div>
-                        </td>
-                        <td class="g-item4 sm-pr-0 pb-10" style="padding-right: 20px;   padding-bottom: 20px;">
-                            <div class="text-center"
-                                style=" padding-top: 20px;  padding-left: 15px; padding-right: 15px; padding-bottom: 7px;  border: 1px solid #356CE126; border-radius: 12px;">
-                                <img style="max-width: 48px;" src="https://i.postimg.cc/rw9XB4PY/adf.png" alt="image">
-                                <p class="common-card-heading" style="padding-bottom: 10px; padding-top: 19px;">
-                                    Add Your Bitcoin Wallet
-                                </p>
-                                <p class="common-class-paragraph sm-pb-0 "
-                                    style="max-width: 255px; padding-bottom: 60px; margin: auto;">
-                                    Log in, click "Add Wallet," paste your BTC address, and create a nickname for easy
-                                    access.
-                                </p>
-                                <p
-                                    style="font-family: Roboto;font-size: 28.82px;font-weight: 700;line-height: 120%;text-align: right; color:#356CE126; padding-bottom: 6px; padding-top: 10px;">
-                                    4</p>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="pt-15" style="text-align: center;padding-top: 36px;">
-                <a href="" style="background: #356CE1; padding-top: 12px; padding-bottom: 12px;padding-left: 24px;padding-right: 24px; border-radius: 10px; border: 0; color: white;font-size: 16px;font-weight: 500;line-height: 120%;text-align: center;
-                        ">Add Your Wallet</a>
-            </div>
-        </div>
-    </section>
-    <!-- ----footer-section -->
-    <section class="footer-section py-30 py-25 " style="padding-top: 45px;">
-        <div class="container max-width-595 mx-auto">
-            <div style="text-align: center; padding-top: 35px; " class="logo-div pt-15">
-                <a href="#"><img style="max-width: 160px;" src="https://i.postimg.cc/7hyQJ5CV/qwert.png"
-                        alt="logo" /></a>
-            </div>
-            <p class="common-class-paragraph text-center" style="padding-top: 16px;">
-                Add your wallet and enjoy instant Bitcoin access.</p>
-
-
-            <table class="mx-auto text-center"
-                style="max-width: 144px;  padding-top: 20px; padding-bottom: 20px; padding-left: 30px; padding-right: 30px;">
-                <tr>
-                    <td>
-                        <a href="https://www.facebook.com/" target="_blank"><img
-                                src="https://i.postimg.cc/FRwx6K3S/ri-facebook-fill-1.png" alt="face-book"
-                                style="width: 24px; height: 24px; border-radius: 36px" /></a>
-                    </td>
-                    <td style="padding-left: 16px;">
-                        <a href="https://x.com/?lang=en" target="_blank"><img
-                                src="https://i.postimg.cc/pybqmddv/ri-twitter-x-line.png" alt="twitter"
-                                style="width: 24px; height: 24px; border-radius: 36px" /></a>
-                    </td>
-                    <td style="padding-left: 16px;">
-                        <a href="https://in.linkedin.com/" target="_blank"><img
-                                src="https://i.postimg.cc/j5q5r6Q0/ri-linkedin-fill.png" alt="linked-in"
-                                style="width: 24px; height: 24px; border-radius: 36px" /></a>
-                    </td>
-                    <td style="padding-left: 16px;">
-                        <a href="https://www.instagram.com/" target="_blank"><img
-                                src="https://i.postimg.cc/8kRSbfhL/ri-instagram-fill.png" alt="instagram"
-                                style="width: 24px; height: 24px; border-radius: 36px" /></a>
-                    </td>
-                </tr>
-            </table>
-            <p style="text-align: center">
-                <a href="#" style="
-                  color: #1f67d6;
-                  
-                  text-decoration: underline;
-                  padding-top: 20px;
-                " class="fw-600  fs-16 line-height-120 ">Unsubscribe</a>
-            </p>
-            <p
-                style="text-align:center;padding-bottom: 25px; color: #3d3d3d;font-size: 12px; font-weight: 400; line-height: 190% ;padding-top: 30px; letter-spacing: 0.5px;">
-                © Crypto Dispensers | 205 N Michigan Ave Suite 210 Chicago, IL 60601 |
-                (888) 212-2140
-            </p>
-        </div>
-    </section>
-
+                                    style="color: #494949;font-size: 14px;font-weight: 400;line-height:150%;text-align: center;max-width: 301px;margin: 0 auto;">
+                                    Share the benefits of Crypto Dispensers with your friends and family and earn
+                                    rewards!</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100%; text-align: center;padding-bottom: 15px;" class="pb_16">
+                                <table style="width:144px;margin: 0 auto;" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td style="padding-right: 16px;">
+                                            <a class="d_grid" href="https://www.facebook.com/cryptodispenser"
+                                                target="_blank"> <img src="https://i.postimg.cc/9FfV5Ng8/facebook.png"
+                                                    alt="facebook" width="24"></a>
+                                        </td>
+                                        <td style="padding-right: 16px;">
+                                            <a class="d_grid" href="https://x.com/cryptodispenser" target="_blank"><img
+                                                    src="https://i.postimg.cc/136jLGS7/twitter.png" alt="twitter"
+                                                    width="24"></a>
+                                        </td>
+                                        <td style="padding-right: 16px;">
+                                            <a class="d_grid" href="https://www.linkedin.com/company/cryptodispensers/"
+                                                target="_blank"><img src="https://i.postimg.cc/NMGC9ZHZ/linkedin.png"
+                                                    alt="linkedin" width="24"></a>
+                                        </td>
+                                        <td>
+                                            <a class="d_grid" href="https://www.instagram.com/crypto.dispensers/"
+                                                target="_blank"><img src="https://i.postimg.cc/Twk7rQj1/instagram.png"
+                                                    alt="instagram" width="24"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pb_10" style="width: 100%;text-align: center;padding-bottom:20px;">
+                                <a href="#"
+                                    style="color: #1F67D6;font-size: 16px;font-weight: 600;line-height: 120%;text-align: center; text-decoration: underline;">Unsubscribe</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100%; text-align: center;">
+                                <a href="" target="_blank" class="color_grey"
+                                    style="font-size: 12px;font-weight: 400;line-height:190%;text-align: center;text-decoration: none;">©
+                                    Crypto Dispensers | 205 N Michigan Ave Suite 210 Chicago, IL 60601 | (888) 212-2140
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </center>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 </body>
 
 </html>
