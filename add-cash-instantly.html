@@ -4,411 +4,541 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Cash Instantly</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <style>
-    
-        * {
-            padding: 0;
-            margin: 0;
-            text-decoration: none;
-            box-sizing: border-box;
-            font-family: "Roboto", sans-serif;
-        }
+    <title>Add cash Instantly</title>
+    <!--[if (mso)|(mso 16)]>
+          <style type="text/css">
+            a {text-decoration:none; !important}
+          </style>
+        <![endif]-->
 
-        body {
-            max-width: 675px;
-            margin: auto;
-        }
-
-        .fs-xsm {
-            font-size: 12px !important;
-        }
-
-        .fs-sm {
-            font-size: 14px !important;
-        }
-
-        .fs-md {
-            font-size: 16px !important;
-        }
-
-        .fs-lg {
-            font-size: 24px !important;
-        }
-
-        .fs-xl {
-            font-size: 32px !important;
-        }
-
-        .line-hight-120 {
-            line-height: 120%;
-        }
-
-        .line-hight-150 {
-            line-height: 150%;
-        }
-
-        .line-hight-160 {
-            line-height: 160%;
-        }
-
-        @media (max-width:576px) {
-            .fs-xsm {
-                font-size: 10px;
+    <head>
+        <style>
+            * {
+                font-family: 'Roboto', sans-serif;
+                margin: 0;
+                padding: 0;
             }
 
-            .fs-sm {
-                font-size: 12px !important;
+            .color_grey {
+                color: #3D3D3D !important;
             }
 
-            .fs-md {
-                font-size: 14px !important;
-            }
-
-            .fs-lg {
-                font-size: 20px !important;
-            }
-
-            .fs-xl {
-                font-size: 28px !important;
-            }
-
-            .wh-230-150 {
-                width: 230px !important;
-                height: 150px !important;
-            }
-
-            .wh-175-55 {
-                width: 175px !important;
-                height: 55px !important;
-            }
-
-            .px-20 {
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-            }
-
-            .px-12 {
-                padding-left: 12px !important;
-                padding-right: 12px !important;
-            }
-
-            .pt-30 {
-                padding-top: 30px !important;
-            }
-
-            .pb-25 {
-                padding-bottom: 25px !important;
-            }
-
-            .d_inline_grid {
+            .d_grid {
                 display: inline-grid !important;
             }
 
-            .w_100 {
-                width: 100% !important;
+            @media only screen and (max-width: 575.99px) {
+                .d_inline_grid {
+                    display: inline-grid !important;
+                }
+
+                .w_100 {
+                    width: 100% !important;
+                }
+
+                .text_center {
+                    text-align: center !important;
+                }
+
+                .p_40_16 {
+                    padding: 40px 16px !important;
+                }
+
+                .p_30_24 {
+                    padding: 30px 24px !important;
+                }
+
+                .fs_20 {
+                    font-size: 20px !important;
+                }
+
+                .p_10 {
+                    padding: 10px !important;
+                }
+
+                .pb_20 {
+                    padding-bottom: 20px !important;
+                }
+
+                .pb_10 {
+                    padding-bottom: 10px !important;
+                }
+
+                .logo_padding {
+                    padding: 30px 24px 0 !important;
+                }
+
+                .w_200 {
+                    width: 200px !important;
+                }
+
+                .footer_padding {
+                    padding: 0 24px 30px 24px !important;
+                }
+
+                .pb_15 {
+                    padding-bottom: 15px !important;
+                }
+
+                .feedback_padding {
+                    padding: 20px 15px !important;
+                }
+
+                .bg_cover {
+                    background-size: cover !important;
+                }
+
+                .p_24 {
+                    padding: 0 24px !important;
+                }
+
+                .fs_18 {
+                    font-size: 18px !important;
+                }
+
+                .footer_text {
+                    line-height: 180% !important;
+                    font-size: 11px !important;
+                }
+
+                .pt_15 {
+                    padding-top: 15px !important;
+                }
+                .pt_18{
+                    padding-top: 18px !important;
+                }
             }
+        </style>
+    </head>
 
-            .pb_12 {
-                padding-bottom: 12px !important;
-            }
-
-            .pr_0 {
-                padding-right: 0 !important;
-            }
-
-
-            .bg_140 {
-                background-size: 100% 140% !important;
-            }
-
-            .pl_0 {
-                padding-left: 0 !important;
-            }
-
-            .pt_15 {
-                padding-top: 15px;
-            }
-
-            .wh-130-80 {
-                width: 130px !important;
-                height: 80px !important;
-            }
-
-            .wh-100-45 {
-                width: 100px !important;
-                height: 45px !important;
-            }
-
-            .wh-95-45 {
-                width: 95px !important;
-                height: 45px !important;
-            }
-
-            .wh-125-34 {
-                width: 125px !important;
-                height: 34px !important;
-            }
-
-            .wh-125-40 {
-                width: 125px !important;
-                height: 40px !important;
-            }
-
-            .wh-105-46 {
-                width: 105px !important;
-                height: 46px !important;
-            }
-
-            .wh-146-33 {
-                width: 146px !important;
-                height: 33px !important;
-            }
-
-            .wh-155-30 {
-                width: 155px !important;
-                height: 30px !important;
-            }
-
-            .pb-10 {
-                padding-bottom: 10px !important;
-            }
-
-            .pt-45 {
-                padding-top: 45px !important;
-            }
-
-            .h-80 {
-                height: 80px !important;
-            }
-
-            .mt-5 {
-                margin-top: 5px !important;
-            }
-
-            .w-100px {
-                width: 100px !important;
-            }
-
-            .pb-30 {
-                padding-bottom: 30px !important;
-            }
-
-            .mb-45 {
-                margin-bottom: 45px !important;
-            }
-
-            .pt-20 {
-                padding-top: 20px !important;
-            }
-
-            .pt-10 {
-                padding-top: 10px !important;
-            }
-
-            .pb-15 {
-                padding-bottom: 15px !important;
-            }
-
-            .p-15-0 {
-                padding: 15px 0px !important;
-            }
-
-
-        }
-    </style>
-</head>
-
-<body style="max-width: 650px; margin: auto;">
-    <section style="background-color: #F6F8FF;">
-        <div class="px-12"
-            style="max-width: 675px; margin-left: auto; margin-right: auto; padding-left: 24px; padding-right: 24px;">
-            <div class="pt-30 pb-25" style="text-align: center; padding-top: 40px; padding-bottom: 35px;">
-                <a style="width: 186px; height: 61px;" href="/"><img class="wh-175-55"
-                        style="width:  186px; height: 61px;" src="https://i.postimg.cc/ZnQd33bn/Email-logo.png"
-                        alt="img"></a>
-            </div>
-            <div style="text-align: center;">
-                <img class="wh-230-150" style="width: 253px; height: 161px;"
-                    src="https://i.postimg.cc/RZ53Bvqk/Hero-section-img.png" alt="img">
-            </div>
-            <div class="pb-30 pt-30"
-                style="max-width: 459px; margin: auto; text-align: center; padding-bottom: 35px; padding-top: 36px;">
-                <p class="fs-xl line-hight-120 pb-15"
-                    style="text-align: center; padding-bottom: 18px; font-weight: 600;">Add
-                    Cash Locally, Buy Bitcoin Instantly</p>
-                <p class="fs-sm line-hight-150 " style="color: #4A4B4D; font-weight: 400; padding-bottom: 2px;">Ready to
-                    buy Bitcoin?</p>
-                <p class="fs-sm line-hight-150 " style="color: #4A4B4D; font-weight: 400;">Visit any of these stores to
-                    get started.</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container pt-45"
-            style="max-width: 675px; padding-left: 50px; padding-right: 50px; background-color: white;  width: 100%; padding-top: 60px; margin-left: auto; margin-right: auto;">
-
-            <div style="padding: 0px 24px;">
-                <p class="fs-lg line-hight-120 pb-10"
-                    style="text-align: center; font-weight: 600; padding-bottom: 15px; margin-top: 0;">
-                    Available At</p>
-            </div>
-            <div style="padding: 0px 24px;">
-                <p class="fs-sm line-hight-150 pb-10"
-                    style="text-align: center; font-weight: 400;   padding-bottom: 20px; color: #4D4D4D;">
-                    CVS, Rite Aid,
-                    Casey's, Office Depot, Tops, Love's, Winn-Dixie, and more.</p>
-            </div>
-
-            <table style="width: 100%; text-align: center;">
-                <tr class="d_inline_grid w_70">
-                    <td style="width: 33.33%;padding-right: 7.5px;line-height: 0;" class="w_100 pr_0 pb_12">
-                        <table class="w_100 bg_140 p_15_30 " style="width: 100%;line-height: 0;" cellpadding="0"
-                            cellspacing="0" border="0">
-                            <tr>
-                                <td class="h-80" style="height: 88px;">
-                                    <img class="wh-130-80" style="width: 140px; height: 88px;"
-                                        src="https://i.postimg.cc/NLqfg6Dg/southeastemimg.png" alt="southeastemimg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="h-80" class="pt_20" style="height: 88px;">
-                                    <img class="wh-100-45 " style="width: 103px; height: 47px; margin-top: 15px;"
-                                        src="https://i.postimg.cc/V6SqXb5t/RITE.png" alt="RITE">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="h-80" style="height: 88px;">
-                                    <img class="wh-95-45" style="width: 97px; height: 50px;"
-                                        src="https://i.postimg.cc/50Nxrw8H/HARveys.png" alt="HARveys">
-                                </td>
-                            </tr>
+<body>
+    <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; background-color: #E6E6E6;">
+        <tbody>
+            <tr>
+                <td cellpadding="0" cellspacing="0" border="0" style="width: 100%; padding: 80px 0;" class="p_40_16">
+                    <center style="width: 100%;table-layout:fixed;">
+                        <table cellpadding="0" cellspacing="0" border="0"
+                            style="width: 100%; max-width: 675px; margin: 0 auto; background-color: white;">
+                            <tbody>
+                                <!-- ========logo======= -->
+                                <tr>
+                                    <td style="width: 100%; padding: 40px 0 30px;text-align: center;background-color: #F6F8FF;"
+                                        class="logo_padding">
+                                        <a href="https://www.cryptodispensers.com/" target="_blank" class="d_grid"><img
+                                                src="https://i.postimg.cc/90kvKJfq/Crypto-Logo.png" alt="Crypto-Logo"
+                                                width="186"></a>
+                                    </td>
+                                </tr>
+                                <!-- =============hero================= -->
+                                <tr>
+                                    <td style="background-color: #F6F8FF; width: 100%;padding-bottom: 78px;"
+                                        class="p_30_24">
+                                        <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="width: 100%; text-align: center; padding-bottom:30px;"
+                                                    class="pb_20">
+                                                    <img class="w_200"
+                                                        src="https://i.postimg.cc/q7TK4Vcn/add-cash-instantaly-logo.png"
+                                                        alt="reward" width="299">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; text-align: center;">
+                                                    <h1 class="fs_20 pb_15"
+                                                        style="color: black;font-size: 32px; max-width: 365px; font-weight: 600;line-height:120%;text-align: center; margin: 0 auto; padding-bottom:20px;">
+                                                        Add Cash Locally, Buy Bitcoin Instantly
+                                                    </h1>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="font-size: 14px;
+                                                            font-weight: 400;
+                                                            line-height: 140%;
+                                                            text-align: center;
+                                                            color: #4a4a4d; max-width: 365px; margin: 0 auto;">
+                                                        Buy Bitcoin in Minutes. Simply add cash at any of these nearby
+                                                        stores.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- =====Available At-->
+                                <tr>
+                                    <td style="width: 100%;">
+                                        <table cellpadding="0" cellspacing="0" border="0"
+                                            style="width: 100%; padding: 60px 40px 0 40px;" class="p_30_24">
+                                            <tr>
+                                                <td>
+                                                    <h4 class="fs_18"
+                                                        style="font-weight: 600; font-size: 24px; line-height: 116%; color: black; padding-bottom: 15px; text-align: center;">
+                                                        Available At</h4>
+                                                    <p style="font-size: 14px;
+                                                            font-weight: 400;
+                                                            line-height: 140%;
+                                                            text-align: center;
+                                                            color: #4a4a4d; max-width: 440px; margin: 0 auto;">CVS,
+                                                        Rite Aid, Casey's, Office Depot, Tops, Love's, Winn-Dixie, and
+                                                        more.</p>
+                                                </td>
+                                            </tr>
+                                            <!-- card -->
+                                            <tr>
+                                                <td>
+                                                    <table cellpadding="0" cellspacing="0" border="0"
+                                                        style="padding-top: 24px; width: 100%; margin: 0 auto; text-align: center;"
+                                                        class="pt_18">
+                                                        <tr class="d_inline_grid w_100">
+                                                            <td style="width: 34%;" class="w_100">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="width: 100%;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img style="max-width: 140px;"
+                                                                                src="https://i.postimg.cc/pXWJbs5G/southeastern-grocer.png"
+                                                                                alt="grocer">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="width: 34%;" class="w_100">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="width: 100%;" class="pt_18">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img style="max-width: 135px;"
+                                                                                src="https://i.postimg.cc/m22VF7W5/cvs-image.png"
+                                                                                alt="cvs">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="width: 32%;" class="w_100">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="width: 100%;" class="pt_18">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img style="max-width: 140px;"
+                                                                                src="https://i.postimg.cc/TYQ6xjT2/loves-image.png"
+                                                                                alt="loves">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="d_inline_grid w_100">
+                                                            <td style="width: 34%;" class="w_100">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="width: 100%; padding-top: 20px;"
+                                                                    class="pt_18">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img style="max-width: 103px;"
+                                                                                src="https://i.postimg.cc/266Y92qB/rite-aid.png"
+                                                                                alt="rit-add">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="width: 34%;" class="w_100">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="width: 100%;" class="pt_18">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img style="max-width: 137px;"
+                                                                                src="https://i.postimg.cc/CxhfLp9y/weis-image.png"
+                                                                                alt="weis">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="width: 32%;" class="w_100">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="width: 100%;" class="pt_18">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img style="max-width: 134px;"
+                                                                                src="https://i.postimg.cc/xjPmrdFG/tops-image.png"
+                                                                                alt="tops">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="d_inline_grid w_100">
+                                                            <td style="width: 34%;" class="w_100">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="width: 100%; padding-top: 37px;"
+                                                                    class="pt_18">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img style="max-width: 97px;"
+                                                                                src="https://i.postimg.cc/MHxp8D2Y/harveys-image.png"
+                                                                                alt="harveys">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="width: 34%;" class="w_100">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="width: 100%; padding-top: 37px;"
+                                                                    class="pt_18">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img style="max-width: 135px;"
+                                                                                src="https://i.postimg.cc/fy4BWVBC/fresco-image.png"
+                                                                                alt="fresco">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="width: 32%;" class="w_100">
+                                                                <table cellpadding="0" cellspacing="0" border="0"
+                                                                    style="width: 100%; padding-top: 37px;"
+                                                                    class="pt_18">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img style="max-width: 140px;"
+                                                                                src="https://i.postimg.cc/MTzpC58m/win-dixie.png"
+                                                                                alt="dixie">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- ==============Add Cash at the Register======== -->
+                                <tr>
+                                    <td class="p_24" style="padding: 60px 40px 0 40px;">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
+                                            <tr>
+                                                <td>
+                                                    <h3 class="auto_margin fs_18" style="
+                                                                font-weight: 600;
+                                                                font-size: 24px;
+                                                                line-height: 116%;
+                                                                color: black;
+                                                                text-align: center;
+                                                                padding-bottom: 10px;
+                                                              ">
+                                                        Add Cash at the Register
+                                                    </h3>
+                                                    <p style="font-size: 14px;
+                                                            font-weight: 400;
+                                                            line-height: 145%;
+                                                            text-align: center;
+                                                            color: #4a4a4d; max-width: 349px; margin: 0 auto;">Your
+                                                        funds are loaded to your account and available for crypto
+                                                        purchases in minutes!</p>
+                                                </td>
+                                            </tr>
+                                            <!-- card -->
+                                            <tr>
+                                                <td style="padding-top: 30px;" class="pt_15">
+                                                    <table cellpadding="0" cellspacing="0" border="0"
+                                                        style="width: 100%; max-width: 537px; margin: 0 auto; text-align: center; padding: 29px 30px; border: solid 1px #e1e9fb; border-radius: 12px;"
+                                                        class="p_10">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://i.postimg.cc/qqRMC8MV/scanner-image.png"
+                                                                    alt="scanner-image" style="max-width: 100px;">
+                                                            </td>
+                                                        <tr>
+                                                            <td style="padding-top: 20px;">
+                                                                <p
+                                                                    style="max-width: 475px; font-weight: 400; line-height: 150%; font-size: 14px; text-align: center; margin: 0 auto; color: black;">
+                                                                    Show your barcode to the cashier at the register and
+                                                                    let them know you want to add cash to your balance.
+                                                                    The cashier
+                                                                    will scan the barcode on your phone. Then, hand over
+                                                                    the cash you want to deposit.
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="width: 100%; margin: 0 auto; text-align: center; padding-top: 20px; line-height: 0">
+                                                                <a style="padding: 12px 24px; margin: 0 auto; background-color: #356ce1; font-size: 16px; line-height: 118%; text-decoration: none; color: white; text-align: center; border-radius: 10px;"
+                                                                    href="" target="_blank" class="d_grid">
+                                                                    Add Cash Now</a>
+                                                            </td>
+                                                        </tr>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
                         </table>
-                    </td>
-                    <td style="width: 33.33%;padding:0 7.5px;line-height: 0;" class="pr_0 pl_0 w_100 pb_12">
-                        <table class="w_100 bg_140 p_15_30 " style="width: 100%; line-height: 0;" cellpadding="0"
-                            cellspacing="0" border="0">
-                            <tr>
-                                <td class="h-80" style="height: 88px;">
-                                    <img class="wh-125-34" style="width: 135px; height: 37px;"
-                                        src="https://i.postimg.cc/7ZcCcz8Z/CVS.png" alt="southeastemimg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="h-80" style="height: 88px;">
-                                    <img class="wh-125-40" style="width: 137px; height: 43px;"
-                                        src="https://i.postimg.cc/9FYPh27v/WEIS.png" alt="RITE">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="h-80" style="height: 88px;">
-                                    <img class="wh-105-46" style="width: 114px; height: 51px;"
-                                        src="https://i.postimg.cc/9QhYspQF/freso.png" alt="HARveys">
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td style="width: 33.33%;padding:0 7.5px;line-height: 0;" class="pl_0 pr_0 w_100 pb_12">
-                        <table class="w_100 p_15_30 bg_140" style="width: 100%;line-height: 0;" cellpadding="0"
-                            cellspacing="0" border="0">
-                            <tr>
-                                <td class="h-80" style="height: 88px;">
-                                    <img class="wh-146-33" style="width: 152px; height: 36px;"
-                                        src="https://i.postimg.cc/RFJW4ZmL/Loves.png" alt="southeastemimg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="h-80" style="height: 88px;">
-                                    <img class="wh-125-34 " style="width: 134px; height: 43px;"
-                                        src="https://i.postimg.cc/SxzMKp2S/Tops.png" alt="RITE">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="h-80" style="height: 88px;">
-                                    <img class="wh-155-30" style="width: 162px; height: 33px;"
-                                        src="https://i.postimg.cc/xC2QzBfV/Winn.png" alt="HARveys">
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-
-                </tr>
-            </table>
-        </div>
-    </section>
-    <section>
-        <div class="container pt-45"
-            style="max-width: 675px;  margin: auto; padding-top: 60px; padding-left: 27px; padding-right: 27px;">
-            <div>
-                <p class="fs-lg" style="font-weight: 600; text-align: center;">Add Cash at the Register</p>
-                <p class="fs-sm line-hight-150 mt-5"
-                    style="text-align: center; color: #4D4D4D; margin:auto; margin-top: 10px; max-width: 349px; padding-bottom: 30px;">
-                    Your
-                    funds are loaded to your account and available for crypto purchases in minutes! </p>
-            </div>
-            <div class="px-20 pt_15 pb-30 mb-45"
-                style="max-width: 537px; margin: auto; border: 1px solid #E1E9FB; border-radius: 12px; text-align: center; padding-top: 25px; padding-bottom: 40px; padding-left: 24px; padding-right: 24px;  margin-bottom: 60px;">
-                <img class="w-100px" style="width: 120px;" src="https://i.postimg.cc/633q031v/bar-code.png" alt="img">
-                <p class="fs-sm line-hight-150"
-                    style="max-width: 475px; padding-top: 20px;  margin: auto; font-weight: 400 ; padding-bottom: 35px; ">
-                    Show your barcode to the cashier at the register and let them know you want to add cash to your
-                    balance. The cashier will scan the barcode on your phone. Then, hand over the cash you want to
-                    deposit. </p>
-                <a style="padding: 15px 24px; background-color: #356CE1; color: white; border-radius: 10px; font-weight: 600; "
-                    href="/">Add Cash Now</a>
-
-            </div>
-        </div>
-        <div style="max-width: 675px; width: 100%; margin: auto; padding-left: 24px; padding-right: 24px;">
-            <div
-                style=" text-align: center;  max-height: 197px; height: 100%; border-radius: 16px; background-image: url('https://i.postimg.cc/8k7m642N/bg-img.png'); background-repeat:  no-repeat; padding-bottom: 39px; background-size: cover; max-width: 620px; margin: auto; width: 100%;">
-                <p class="fs-lg line-hight-150 pt-20 pb-30"
-                    style="max-width: 454px; color: white; text-align: center ; margin: auto ; padding-left: 12px; padding-right: 12px; font-weight: 600; padding-top: 27px; padding-bottom: 39px;   ; ">
-                    With Thousands of Retailers, Bitcoin is Just Around the Corner.</p>
-                <a style="text-align: center; font-weight: 600; color: #356CE1; background: white; padding: 12px 24px; border-radius: 10px;"
-                    href="/">Nearby Stores</a>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container pt-45"
-            style="max-width: 675px; margin: auto; padding-left: 24px; padding-right: 24px; text-align: center; padding-top: 60px;">
-            <div>
-                <a href="/"><img style="width: 160px;" src="https://i.postimg.cc/ZnQd33bn/Email-logo.png" alt="img"></a>
-                <p class="fs-sm line-hight-150 pt-10 pb-15"
-                    style="max-width: 367px; padding-top: 16px; padding-bottom: 20px; margin: auto; color: #4D4D4D;">
-                    With over 16,000 retail partners, your next Bitcoin
-                    purchase is right around the corner.</p>
-            </div>
-            <table style="text-align: center; width: 100%; max-width: 144px; margin: auto;">
-                <tr>
-                    <td style="text-align: center;"><a target="_blank" href="https://www.facebook.com/"><img
-                                style="width: 24px; height: 24px; " src="https://i.postimg.cc/pLRFj2xD/facebook-img.png"
-                                alt="Facebook"></a></td>
-                    <td style="text-align: center;"><a target="_blank" href="https://x.com/?lang=en"><img
-                                style="width: 24px; height: 24px; " src="https://i.postimg.cc/J7XDdyzN/x-icon.png"
-                                alt="I-cone"></a></td>
-                    <td style="text-align: center;"><a target="_blank" href="https://www.linkedin.com/"><img
-                                style="width: 24px; height: 24px; " src="https://i.postimg.cc/L5ks41JG/Linked-img.png"
-                                alt="Linked"></a></td>
-                    <td style="text-align: center;"><a target="_blank" href="https://www.instagram.com/"><img
-                                style="width: 24px; height: 24px; " src="https://i.postimg.cc/hPyBLsRp/Instagrams.png"
-                                alt="Instagram"></a></td>
-                </tr>
-            </table>
-            <div class="pt_15" style="text-align: center; padding-top: 20px;">
-                <a class="line-hight-120 fs-md" style="text-decoration: underline; color: #1F67D6;  font-weight: 600;"
-                    href="/">Unsubscribe</a>
-            </div>
-            <div class="p-15-0" style="text-align: center; padding: 20px 0px;">
-                <p class="fs-xsm line-hight-120" style="font-weight: 400; color: #3D3D3D;">© Crypto Dispensers | 205 N
-                    Michigan Ave Suite 210 Chicago, IL 60601 | (888) 212-2140 </p>
-            </div>
-        </div>
-    </section>
+                </td>
+            </tr>
+            <!-- nearby-stores -->
+            <tr>
+                <td style="width: 100%; padding: 60px 27px 0 27px" class="p_30_24">
+                    <table style="width: 100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td style="width: 100%">
+                                <table style="
+                                                                width: 100%;
+                                                                background-image: url(https://i.postimg.cc/8zp3Ykw3/bitcoin-bg.png);
+                                                                background-position: center;
+                                                                background-repeat: no-repeat;
+                                                                background-size: 100% 100%;
+                                                                border-radius: 16px;
+                                                                padding: 27.5px 38px 37px;
+                                                              " class="feedback_padding bg_cover">
+                                    <tr>
+                                        <td style="width: 100%; text-align: center">
+                                            <h3 class="auto_margin fs_18" style="
+                                                                      color: white;
+                                                                      font-size: 24px;
+                                                                      font-weight: 600;
+                                                                      line-height: 145%;
+                                                                      text-align: center;
+                                                                      max-width:545px;
+                                                                      margin: 0 auto;
+                                                                    ">
+                                                With Thousands of Retailers, Bitcoin is Just Around the Corner.
+                                            </h3>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="
+                                                                    width: 100%;
+                                                                    text-align: center;
+                                                                    line-height: 0;
+                                                                    padding-top: 27px;
+                                                                  ">
+                                            <a href="" target="_blank" class="d_grid"
+                                                style="text-align: center; line-height: 0"><img
+                                                    src="https://i.postimg.cc/0yGtPTXS/nerby-stores.png"
+                                                    alt="nearby-btn" width="150" /></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer -->
+            <tr>
+                <td style="width: 100%; padding: 39px 27px" class="footer_padding">
+                    <table style="width: 100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td style="
+                                                              width: 100%;
+                                                              text-align: center;
+                                                              padding-bottom: 15px;
+                                                              line-height: 0;
+                                                            ">
+                                <a href="https://www.cryptodispensers.com/" target="_blank" class="d_grid"
+                                    style="text-align: center; line-height: 0"><img style="line-height: 0"
+                                        src="https://i.postimg.cc/GpHppRrj/footer-logo.png" alt="footer-logo"
+                                        width="37" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="
+                                                              width: 100%;
+                                                              text-align: center;
+                                                              padding-bottom: 15px;
+                                                            ">
+                                <p class="auto_margin" style="
+                                                                color: #494949;
+                                                                font-size: 14px;
+                                                                font-weight: 400;
+                                                                line-height: 150%;
+                                                                text-align: center;
+                                                                max-width: 306px;
+                                                                margin: 0 auto;
+                                                              ">
+                                    With over 16,000 retail partners, your next Bitcoin purchase is right around the
+                                    corner.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="
+                                                              width: 100%;
+                                                              text-align: center;
+                                                              padding-bottom: 15px;
+                                                            ">
+                                <table class="auto_margin" style="width: 144px;  margin: 0 auto;" cellpadding="0"
+                                    cellspacing="0" border="0">
+                                    <tr>
+                                        <td style="padding-right: 16px">
+                                            <a class="d_grid" href="https://www.facebook.com/cryptodispenser"
+                                                target="_blank">
+                                                <img src="https://i.postimg.cc/9FfV5Ng8/facebook.png" alt="facebook"
+                                                    width="24" /></a>
+                                        </td>
+                                        <td style="padding-right: 16px">
+                                            <a class="d_grid" href="https://x.com/cryptodispenser" target="_blank"><img
+                                                    src="https://i.postimg.cc/136jLGS7/twitter.png" alt="twitter"
+                                                    width="24" /></a>
+                                        </td>
+                                        <td style="padding-right: 16px">
+                                            <a class="d_grid" href="https://www.linkedin.com/company/cryptodispensers/"
+                                                target="_blank"><img src="https://i.postimg.cc/NMGC9ZHZ/linkedin.png"
+                                                    alt="linkedin" width="24" /></a>
+                                        </td>
+                                        <td>
+                                            <a class="d_grid" href="https://www.instagram.com/crypto.dispensers/"
+                                                target="_blank"><img src="https://i.postimg.cc/Twk7rQj1/instagram.png"
+                                                    alt="instagram" width="24" /></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pb_10" style="
+                                                              width: 100%;
+                                                              text-align: center;
+                                                              padding-bottom: 20px;
+                                                            ">
+                                <a href="#" style="
+                                                                color: #1f67d6;
+                                                                font-size: 16px;
+                                                                font-weight: 600;
+                                                                line-height: 120%;
+                                                                text-align: center;
+                                                                text-decoration: underline;
+                                                              ">Unsubscribe</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100%; text-align: center">
+                                <a href="" class="color_grey d_grid footer_text" style="
+                                                                font-size: 12px;
+                                                                font-weight: 400;
+                                                                line-height: 190%;
+                                                                text-align: center;
+                                                                text-decoration: none;
+                                                                letter-spacing: 0.005em;
+                                                              ">© Crypto Dispensers | 205 N Michigan Ave Suite 210
+                                    Chicago, IL 60601 | (888) 212-2140</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </center>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 </body>
 
 </html>
